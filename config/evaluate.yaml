@@ -1,0 +1,5 @@
+TEST_DATA_PATH: "dataset/Predictive modeling - football-match-probability-prediction/test.csv"
+BEST_MODEL_BASE_PATH: "experiments/2023-09-14-20:08:13"
+BEST_MODEL_FILE: "best_HistGradientBoostingClassifier.pkl"
+METADATA_MODEL_FILE: "meta_experiment.json"
+OUTPUT_FILE: 'result.csv'
