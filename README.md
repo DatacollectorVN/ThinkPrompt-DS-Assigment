@@ -27,7 +27,7 @@ pip install -r requirements.txt
 ```
 
 # 5. Training model
-Config basic training in `config/train.yaml`. If you want to config model's parameters that is used in GridSerach, edit in `src/models.py`
+Config basic training in `config/train.yaml`. If you want to config model's parameters that is used in GridSearch, edit in `src/models.py`
 
 *Start training*
 ```bash
