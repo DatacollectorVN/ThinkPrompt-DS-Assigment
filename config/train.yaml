@@ -1,4 +1,4 @@
-MODELS: ["MLPClassifier"]
+MODELS: ["XGBClassifier"]
 TRAIN_DATA_PATH: "dataset/Predictive modeling - football-match-probability-prediction/train.csv"
 ENCODE_OUTPUT: True
 OVERSAMPLE: True

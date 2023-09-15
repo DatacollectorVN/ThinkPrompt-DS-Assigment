@@ -67,6 +67,7 @@ class Trainer(SettingConfig):
     def _pipeline(self):
         column_transformers = []
         preprocessor = None
+        
         if len(self.MIN_MAX_SCALER_COLS) > 0:
             numeric_transformer = Pipeline(steps = [
                 ("minmax_scaler", MinMaxScaler())]

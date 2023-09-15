@@ -44,8 +44,6 @@ def save_results(estimator, model_type, duration, encode):
     base_dir = os.path.join("experiments", now)
     os.mkdir(base_dir)
     # print(estimator.cv_results_)
-    # with open(os.path.join(base_dir, "meta_experiment_detail.json"), "w") as outfile:
-    #     json.dump(estimator.cv_results_, outfile)
     _save_estimator(estimator.best_estimator_, model_type, base_dir)
     _save_meta_experiment(estimator, model_type, base_dir, duration, encode)
 
