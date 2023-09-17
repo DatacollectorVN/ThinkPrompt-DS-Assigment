@@ -42,3 +42,8 @@ Config basic evaluation in `config/evaluate.yaml`.
 ```bash
 python eval.py
 ```
+
+# 6. Best model
+Our best model achive the potential accuracy with
+- Entire dataset (Train + Validation dataset) = `64.93956%`
+- Validation dataset = `43.15257%`
