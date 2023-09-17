@@ -35,7 +35,8 @@ python train.py
 ```
 
 # 6. Evaluating
-Config basic evaluation in `config/evaluate.yaml`
+Config basic evaluation in `config/evaluate.yaml`.
+- `IS_EVAL`: True if evaluate the dataset with annotation to return the score
 
 *Start evaluating*
 ```bash

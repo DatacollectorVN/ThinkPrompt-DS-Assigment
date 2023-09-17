@@ -60,6 +60,7 @@ class CustomInferentDataset(object):
 
     def __getitem__(self, index):
         return self.data.iloc[index]
+    
 
 
 class CustomTransformer(BaseEstimator, TransformerMixin):

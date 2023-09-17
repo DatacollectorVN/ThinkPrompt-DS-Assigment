@@ -18,9 +18,14 @@ logger = custom_loggers()
 
 def main():
     evaluator = Evaluator(logger, **params)
-    logger.log("ANNOUNCE", "Start evaluating")
-    evaluator.evaluate(return_proba = True)
-    logger.log("ANNOUNCE", "Completed evaluating")
+    if params['IS_EVAL']:
+        logger.log("ANNOUNCE", "Start evaluating")
+        evaluator.evaluate()
+        logger.log("ANNOUNCE", "Completed evaluating")
+    else:
+        logger.log("ANNOUNCE", "Start infrences")
+        evaluator.infer(proba = True, return_csv = True)
+        logger.log("ANNOUNCE", "Completed inference") 
 
 if __name__ == "__main__":
     try:

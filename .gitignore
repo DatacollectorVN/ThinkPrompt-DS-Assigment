@@ -2,3 +2,4 @@
 dataset/
 experiments/
 result.csv
+temp/**
